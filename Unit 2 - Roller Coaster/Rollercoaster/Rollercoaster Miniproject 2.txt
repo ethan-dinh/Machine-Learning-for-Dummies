@@ -1,0 +1,31 @@
+Rollercoaster Miniproject
+
+How did you clean the data? What columns/rows did you keep? Which ones did you get rid of? Why? What missing data did you fill in? How? Why?
+We first stripped the data frame. Then, we cleaned the data by dropping rows without values in what we thought were the most important categories, height and speed. We dropped the Vertical Angle column. We replaced a value of 200 ft with just 200 and changed the variable type to float.
+
+What interesting observations did you find in the data? (For example: What is the oldest rollercoaster?)
+Most of the speed of Rollercoasters is around 50 mph. The oldest coaster is Giant Dipper, built in 1924.
+
+What graphs did you find by plotting numerical variables? Any interesting scatterplots or histograms? Do any of the scatterplots warrant a regression curve? If so, can you create one and interpret it?
+It looks like the speed follows a normal-ish, right-skewed distribution with a center at about 50. The distribution of length seems like there is more of a standard length. We made a regression of speed vs. height, because it looked like it would fit a linear regression.
+
+Can you make any sense out of the CoasterBuzz rankings? If so, what factors do they seem to be weighting highly? If not, why might you be having trouble finding a pattern? https://coasterbuzz.com/RollerCoasters/Top100
+CoasterBuzz only looks at USA, UK and Canada. They appear to prefer Sit Down roller coasters, and seem not to reward speed, height, or inversions in particular.
+
+Can you come up with your own ranking system? If you sort according to your own ranking, what are your top 10 roller coasters? How do they compare to the CoasterBuzz rankings?
+We came up with our own rating system, making each category a score of 0-1. We then weighted each factor as we saw fit according to our own interpretations of "fun-ness" and added these scores together. Our list is as follows, noting highlights of some of the rides:
+Kingda Ka (height, speed)
+Top Thrill Dragster
+Formula Rossa (extreme speed and length)
+Eejanaika (inverted type, inversions)
+Steel Dragon 200
+Red Force
+Dinoconda (inverted type, inversions)
+Fury 325
+Superman (height)
+Millenium Force
+
+Many of these rides were not included in the CoasterBuzz survey. Additionally, the top rides of CoasterBuzz are mostly different from ours, except for Fury 325 and Millenium Force. We think that our ride ranking system is best, however, because we watched many YouTube videos that supported our identification of the top 10 as fun and exciting rides. We maybe should watch a more diverse range of videos to broaden our perspective and rank them qualitatively.
+
+
+Submit your findings in a single Jupyter Notebook. Your explanations should be written in Markdown and all of your code cells should run without errors. Please organize the notebook so that it is easy to read and follow.
